@@ -1,3 +1,3 @@
 ** My portfolio
 
-A Django project to create an app showing my portfolio. Pthon + Django + MySQL + HTML
+A Django project to create Portfolio app. Python + Django + MySQL + HTML
