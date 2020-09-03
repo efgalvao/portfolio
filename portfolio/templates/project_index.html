@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
+<style>
+        body {
+            background-color: #1843de;
+            color: white
+        }
+        card-body {
+            padding: 1px 1px;
+}
+</style>
+<body>
 <h1>Projects</h1>
 <div class="row">
 {% for project in projects %}
@@ -8,8 +18,8 @@
         <div class="card mb-2">
             <img class="card-img-top" src="{% static project.image %}">
             <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
+                <h5 class="card-title text-dark">{{ project.title }}</h5>
+                <p class="card-text text-dark">{{ project.brief }}</p>
                 <a href="{% url 'project_detail' project.pk %}"
                    class="btn btn-primary">
                     Read More
@@ -19,4 +29,5 @@
     </div>
     {% endfor %}
 </div>
+</body>
 {% endblock %}
