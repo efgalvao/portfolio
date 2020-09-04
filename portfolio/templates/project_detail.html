@@ -19,6 +19,15 @@
         <br>
         <h5>Technology used:</h5>
         <p>{{ project.technology }}</p>
+        <h5>Links:</h5>
+<p>
+        <img src="{% static 'img/github.svg' %}" alt="" width="32" height="32" title="Github"> {{ project.github }}
+</p>
+        <p>
+        <img src="{% static 'img/heroku.svg' %}" alt="" width="32" height="32" title="Heroku"> {{ project.heroku }}
+</p>
+
+
     </div>
 </div>
 {% endblock %}
