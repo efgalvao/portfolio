@@ -15,8 +15,8 @@
 <div class="row">
 {% for project in projects %}
     <div class="col-md-4">
-        <div class="card mb-2">
-            <img class="card-img-top" src="{% static project.image %}">
+        <div class="card mb-2" style="width:300px">
+            <img class="card-img-top" src="{{ project.image.url }}" alt="{{ project.title }}" >
             <div class="card-body">
                 <h5 class="card-title text-dark">{{ project.title }}</h5>
                 <p class="card-text text-dark">{{ project.brief }}</p>
