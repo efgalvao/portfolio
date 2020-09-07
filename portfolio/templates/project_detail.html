@@ -8,13 +8,10 @@
             color: white
         }
 </style>
-<h1>{{ project.title }}</h1>
-<div class="row">
-    <div class="col-md-8">
-        <img src="{% static project.image %}" alt="" width="100%">
-    </div>
-    <div class="col-md-4">
-        <h5>About the project:</h5>
+<main role="main" class="container" >
+    <div class="starter-template">
+        <h1>{{ project.title }}</h1>
+    <h5>About the project:</h5>
         <p>{{ project.description }}</p>
         <br>
         <h5>Technology used:</h5>
@@ -24,10 +21,8 @@
         <img src="{% static 'img/github.svg' %}" alt="" width="32" height="32" title="Github"> {{ project.github }}
 </p>
         <p>
-        <img src="{% static 'img/heroku.svg' %}" alt="" width="32" height="32" title="Heroku"> {{ project.heroku }}
+        <img src="{% static 'img/heroku4.png' %}" alt="" width="32" height="32" title="Heroku"> {{ project.heroku }}
 </p>
-
-
     </div>
-</div>
+
 {% endblock %}
