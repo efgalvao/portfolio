@@ -1,0 +1,6 @@
+[client]
+database = portfolio
+host = localhost
+username = solfieri
+password = zxcvbnm82
+default-character-set = utf8mb4

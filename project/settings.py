@@ -67,14 +67,15 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'portfolio',
-        'USER': 'solfieri',
-        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
+        'USER': 'myuser',
+        'PASSWORD': os.getenv("DB_PASSWORD"),
         'HOST': 'localhost',
-        'PORT': '3306',
-    }
+        'PORT': '',
+            }
 }
+
 
 
 # Password validation
