@@ -4,59 +4,24 @@
 {% block page_content %}
 <style>
         body {
+            height:100%;
             background-color: #1843de;
-            color: #01021e
+            color: white
         }
-         /* Style inputs with type="text", select elements and textareas */
-        input[type=text], select, textarea {
-          width: 50%; /* Full width */
-          padding: 12px; /* Some padding */
-          border: 1px solid #ccc; /* Gray border */
-          border-radius: 4px; /* Rounded borders */
-          box-sizing: border-box; /* Make sure that padding and width stays in place */
-          margin-top: 6px; /* Add a top margin */
-          margin-bottom: 16px; /* Bottom margin */
-          resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-        }
-
-        /* Style the submit button with a specific background color etc */
-        input[type=submit] {
-          background-color: #01021e;
-          color: white;
-          padding: 6px 10px;
-          border: none;
-          border-radius: 2px;
-          cursor: pointer;
-        }
-
-        /* When moving the mouse over the submit button, add a darker green color */
-        input[type=submit]:hover {
-          background-color: #45a049;
-        }
-
-        /* Add a background color and some padding around the form */
-        .container {
-          border-radius: 5px;
-          background-color: #f2f2f2;
-          padding: 20px;
-        }
-</style>
-
+      </style>
 <main role="main" class="container" >
-     <div class="container">
-  <form action="action_page.php">
+    <div class="contact">
+    <h2>Contact</h2>
+        <br>
+ <p> Feel free to contact me by any of the ways below:</p>
+        <p>
+        <img src="{% static 'img/email.svg' %}" alt="" width="32" height="32" title="E-mail"> <a href="mailto:edmarfgalvao@hotmail.com" style="color: black">Edmar Ferreira Galvão</a>
 
-    <label for="fname">First Name</label>
-      <br />
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    <br />
-    <label for="subject">Subject</label>
-    <br />
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    <br />
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-</main>
+<p>
+        <img src="{% static 'img/github.svg' %}" alt="" width="32" height="32" title="Github"> <a href="https://github.com/efgalvao" style="color: black">Github</a>
+</p>
+        <p>
+        <img src="{% static 'img/linkedin.png' %}" alt="" width="32" height="32" title="Linkedin">  <a href="https://www.linkedin.com/in/edmar-ferreira-galv%C3%A3o-a76331187/" style="color: black">Linkedin</a>
+</p>
+    </div>
 {% endblock %}
