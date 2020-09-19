@@ -18,10 +18,10 @@
         <p>{{ project.technology }}</p>
         <h5>Links:</h5>
 <p>
-        <img src="{% static 'img/github.svg' %}" alt="" width="32" height="32" title="Github"> {{ project.github }}
+        <img src="{% static 'img/github.svg' %}" alt="" width="32" height="32" title="Github" ><a href="{{ project.github }}" style="color: black"> {{ project.github }}</a>
 </p>
         <p>
-        <img src="{% static 'img/heroku4.png' %}" alt="" width="32" height="32" title="Heroku"> {{ project.heroku }}
+        <img src="{% static 'img/heroku.png' %}" alt="" width="32" height="32" title="Heroku"> <a href="{{ project.heroku }}" style="color: black"> {{ project.heroku }}</a>
 </p>
     </div>
 

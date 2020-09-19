@@ -14,7 +14,10 @@ class Project(models.Model):
     github = models.URLField(max_length=50, blank=True)
     heroku = models.URLField(max_length=50, blank=True)
 
+    class Meta:
+        ordering = ['-id']
+
     def __str__(self):
-        return self.title
+        return self.id
 
 
